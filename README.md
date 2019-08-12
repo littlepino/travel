@@ -1,5 +1,5 @@
 # travel
-
+Vue 2.5 模仿去哪网app
 ## Project setup
 ```
 npm install
