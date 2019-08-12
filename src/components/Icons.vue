@@ -64,7 +64,7 @@ export default {
       const pages = []
       this.iconList.forEach((item, index) => {
         const page = Math.floor(index / 8) // 当 index 小于8的时候，page 为 0，即 push 内的是第 0 页，当 index 大于 8 的时候，数据就会 push 到第一页，是，等于变成了一个大数组内两个数组，page 就是第数组内的数组
-        if (!pages[page]) { 
+        if (!pages[page]) {
           pages[page] = []
         }
         pages[page].push(item)
