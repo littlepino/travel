@@ -17,7 +17,7 @@
           </div>
         </div>
       </div>
-      <div class="area" v-for='(item,key) of cities' :key="key">
+      <div class="area" v-for='(item,key) of cities' :key="key" :ref="key">
         <div class="title border-topbottom">{{ key }}</div>
         <div class="item-list">
           <div class="item border-topbottom" v-for='innerItem of item' :key="innerItem.id">
@@ -42,7 +42,17 @@ export default {
   },
   props: {
     hot: Array,
-    cities: Object
+    cities: Object,
+    letter: String
+  },
+  watch: {
+    letter () {
+      if (this.letter) {
+        // better-scroll 带的一个方法，可以滚动到传递的元素上去
+        const element = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(element)
+      }
+    }
   }
 }
 </script>
