@@ -50,6 +50,20 @@ export default {
     },
     handleTouchEnd () {
       this.touchStatus = false
+    },
+    // 节流函数
+    throttle (func, wait) {
+      let timer
+      return function () {
+        let context = this
+        let args = arguments
+        if (!timer) {
+          timer = setTimeout(() => {
+            timer = null
+            func.apply(context, args)
+          }, wait)
+        }
+      }
     }
   },
   computed: {
