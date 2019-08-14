@@ -1,0 +1,25 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "世界公园(AAAA景区)",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1901/ea/ea459039354370daa3.img.jpg_600x330_fb7c3a59.jpg",
+    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_r_800x800_087730c7.jpg","http://img1.qunarzz.com/sight/p0/1906/e7/e7276de002459b50a3.img.jpg_r_800x800_5cdd4127.jpg"],
+    "categoryList": [{
+      "title": "成人票",
+      "children": [{
+        "title": "成人三馆联票",
+        "children": [{
+          "title": "成人三馆联票 - 某一连锁店销售"
+        }]
+      }, {
+        "title": "成人五馆联票"
+      }]
+    }, {
+      "title": "学生票"
+    }, {
+      "title": "儿童票"
+    }, {
+      "title": "特惠票"
+    }]
+  }
+}
